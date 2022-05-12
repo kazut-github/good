@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Sleep</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="good_sleep.css">
+    <!-- レスポンシブCSS -->
+    <!-- <link rel="stylesheet" href="responsive.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  </head>
+  <body>
+    <header>
+      <div class="menu">
+       <div class="row m-3 p-3">
+          <div class="col-6">
+            睡眠チェックシステム
+          </div>
+        <div class="col">
+            <div class="btn-group">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="defaultDropdown" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+                使い方ガイド
+              </button>
+            <ul class="dropdown-menu" aria-labelledby="defaultDropdown">
+              <tr>
+                あなたの睡眠を簡易的にチェックするシステムです。
+                <ol>
+                  <li>チェックリストに寝る前の該当にチェック</li>
+                  <li>決定ボタンを押し、ポイント表示</li>
+                  <li>翌日の朝起きた時の体感疲労度入力</li>
+                  <li>ポイント表示 → チェックポイントと比較</li>
+                  <li>１週間のデータからあなたの睡眠に有効なものを判別</li>
+                </ol>
+              </tr>
+            </ul>
+          </div>
+        </div>
+        <div class="col">
+          <div class="btn-group">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+              睡眠について
+            </button>
+          <ul class="dropdown-menu" aria-labelledby="defaultDropdown">
+            <tr>
+              睡眠についての重要性がよく話題として
+              取り上げられます。睡眠は生物にとって
+              必要不可欠なものであり、良質な睡眠を
+              しっかりとることで疲労回復だけでなく
+              痩身、意欲向上，アンチエイジングにも
+              効果的と言われています。
+            </tr>
+          </ul>
+        </div>
+      </div>
+        <div class="col">
+          <div class="btn-group">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuClickableInside" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+              Arcvive
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuClickableInside">
+              <li><a class="dropdown-item" href="#">2022</a></li>
+              <li><a class="dropdown-item" href="#">2021</a></li>
+              <li><a class="dropdown-item" href="#">2020</a></li>
+            </ul>
+          </div>
+        </div>
+       </div>
+      </div>                      
+    </header>
+    <main>
+  <div class="heading">
+    <h1>睡眠チェック!!</h1>
+  </div>
+      <!-- トップコンテンツ -->
+  <div class="screen">
+   <h2>昨日睡眠ポイント</h2>
+  <div class="row">
+    <div class="col-md-12 col-xs-12">
+      <p class="yearClass" id="js-year">年数</p>
+    </div>
+    <div class="col-md-6 col-xs-12">
+      <p id="js-day-1" class="dayClass">0/0</p>
+    </div>
+    <div class="col-md-6 col-xs-12">
+      <p class="day-point"><span id="js-check_point">0</span><span class="point">ポイント</span></p>
+    </div>
+   </div>       
+  </div>
+ <div class="check_box">
+      <!-- formのレイアウトにrowとcolを利用して、垂直から水平レイアウトに変更する -->
+        <!-- 最小単位のセット、勝手に順番に２列で並んでいく -->
+      <div class="row">
+          <div class="mb-3 col-sm-6">
+            <div class="form-check"> 
+               <input class="form-check-input" type="checkbox" name="checkbox">
+               <label class="form-check-label" for="flexCheckDefault">
+               入浴後1.5時間後就寝  
+            </label>
+          </div>
+         </div>
+           <div class="mb-3 col-sm-6">
+             <div class="form-check">
+               <input class="form-check-input" type="checkbox" name="checkbox">
+               <label class="form-check-label" for="flexCheckChecked">
+               運動 
+            </label>
+          </div>
+         </div>
+           <div class="mb-3 col-sm-6">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="checkbox">
+              <label class="form-check-label" for="flexCheckDefault">
+                運動 就寝2時間前に終了
+             </label>
+          </div>
+         </div>
+          <div class="mb-3 col-sm-6">
+           <div class="form-check"> 
+              <input class="form-check-input" type="checkbox" name="checkbox">
+              <label class="form-check-label" for="flexCheckDefault">
+                食後三時間後就寝
+             </label>
+          </div>
+         </div>
+          <div class="mb-3 col-sm-6">
+           <div class="form-check"> 
+             <input class="form-check-input" type="checkbox" name="checkbox">
+             <label class="form-check-label" for="flexCheckDefault">
+              1時間前ブルーライト浴びない
+            </label>
+          </div>
+         </div>
+          <div class="mb-3 col-sm-6">
+           <div class="form-check"> 
+            <input class="form-check-input" type="checkbox" name="checkbox">
+            <label class="form-check-label" for="flexCheckDefault">
+              読書
+            </label>
+          </div>
+         </div>
+          <!-- 暖色系ライト -->
+          <div class="decision">
+            <button  value="決定" id="dayConfirm">決定</button>
+          </div>
+         </div>
+        </div>
+        <!-- 目覚め度体感コンテンツ -->
+<div class="wake_up">
+  <div wake_up_feel>
+    <h2>お目覚め体感度</h2>
+    <div class="row">
+     <div col-md-12 col-xs-12>
+      <div style="width: 300px;" class="input-group mb-3">
+        <span class="input-group-text" id="inputGroup-sizing-default">自己評価10段階</span>
+        <input type="number" style="width: 20%;" id="js-feel_number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" min="0" max="10" placeholder="10段階入力">
+     </div>
+    </div>
+<div class="col-md-12 col-xs-12">
+<!-- 日付とポイント表示 -->
+<div class="btn_display">
+  <p id="js-day-2" class="dayClass">0/0<p><span id="js-wake_up_point">0</span><span id="wake_point" class="point">ポイント</span></p></p>
+  <!-- <input type="button" id="js-btn_comfirm" value="確定"> -->
+ </div>
+</div>
+<div class="btn-team">
+  <div class="col-xs-12 mb-xl-auto">
+    <button id="js-rst_btn">リセット</button>
+    <button id="js-save_btn">保存</button>  
+  </div>
+</div>
+  </div>
+  </div>   
+ </div>
+</main>
+  <footer>
+    <div class="row">
+      <div class="col-12"></div>
+      <div class="footer-logo">
+        <h6>〜ご利用ありがとうございました〜</h6>
+        <p>◆Kazut works◆</p>
+      </div>
+    </div>
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="good_sleep.js"></script>
+
+  </body>
+</html>
