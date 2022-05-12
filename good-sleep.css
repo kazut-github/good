@@ -1,0 +1,151 @@
+body{
+  background-color:rgb(36, 33, 218);
+}
+/* ヘッダー */
+.menu {
+ background-color: cadetblue;
+ font-size: larger;
+ color: aqua;
+ border-radius: 0.7rem;
+}
+.dropdown-menu {
+padding: 0.5rem;
+}
+.col-7 {
+  font-size: 1.5rem;
+  font-family: monospace;
+  /* font-weight: bold; */
+}
+.btn-secondary {
+  border: none;
+  color: orangered;
+  background-color: cadetblue;
+}
+.dropdown-item li{
+  border: solid 1px;
+  margin: 2px 2px;
+}
+/* a {
+  color: orangered;
+  float: right;
+  text-decoration: none;
+ } */
+
+/* headingクラス */
+h1 {
+  margin: 2rem 0 3rem 2rem;
+  font-size: 3rem;
+  color: whitesmoke;
+}
+/* トップコンテンツ */
+.screen {
+  text-align: center;
+}
+h2 {
+  font-size: xx-large;
+  font-family: sans-serif;
+  font-weight: bolder;
+  color: whitesmoke;
+}
+p {
+  font-size: 5rem;
+  font-weight: bolder;
+  color: whitesmoke;
+}
+.year {
+font-size: 4rem;
+}
+/* #js-day-1 {
+  margin-left: 20rem;
+} */
+/* .day-point {
+  margin-right: 20rem;
+} */
+span {
+  margin-left: 2rem;
+  /* margin-right: 15rem; */
+}
+#js-wake_up_point, #js-check_point {
+  /* border: solid 2px; */
+  padding: 0.5rem 1rem;
+  color: orange;
+}
+.point {
+  font-size: 3rem;
+  color: white;
+}
+/* チェックボックス */
+.check_box {
+  margin: 3rem 0 0 3rem;
+  font-size: x-large;
+  color: rgb(165, 164, 164);
+  /* display: flex; */
+}
+#dayConfirm, #js-rst_btn {
+  background-color: rgba(255, 255, 0, 0.952);  
+  border-radius: 0.5rem;
+}
+.decision {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+#dayConfirm {
+  display: inline;
+  padding: 0.5rem 1.2rem;
+  font-weight: 700;
+  margin-right: 18rem
+}
+
+/* 目覚め度体感コンテンツ */
+.wake_up {
+  margin-top: 2rem;
+}
+.input-group {
+  display: inline;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.wake_up h2{
+  text-align: center;
+  margin: 2rem 0;
+}
+#js-rst_btn, #js-save_btn {
+  padding: 1rem 1rem;
+  font-weight: 900;
+ }
+ #js-save_btn {
+  background-color: #03a9f4;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  display: inline;
+  padding: 0.8rem 1.4rem;
+  margin-left: 0.5rem;
+  font-weight: 700;
+  
+}
+.btn-team {
+  text-align: right;
+  padding-right: 13rem;
+}
+ .btn_display {
+  text-align: center;
+   /* display: flex;            Flexboxを指定 */
+   /* justify-content: center;  水平方向の中央寄せ */
+   /* align-items: center;      垂直方向の中央寄せ */
+ } 
+ footer {
+   text-align: center;
+ }
+footer h6 {
+  color: orange;
+  font-family: 'Gill Sans';
+  margin-top: 2rem;
+}
+footer p {
+border: 1px solid whitesmoke;  
+font-size: large;
+color: white;
+margin: 1rem 0 2rem 0;
+} 
